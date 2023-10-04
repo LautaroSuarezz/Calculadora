@@ -8,24 +8,26 @@ body{
     height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: ;
-    align-items: ;
-    background-color: #cf5252;
+    justify-content: center;
+    align-items: center;
+    background-color: #747570;
 }
 
 .calculator{
     height: 600px;
     width: 400px;
-    background-color: #64c21c;
-    box-shadow: 0px 0px 8px rgba(216, 19, 19, 0.3);
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: rgb(98, 5, 5);
+    color: rgb(0, 0, 0);
+    border: 3px solid black;
 }
 
 .result-bar{
+    border: 2px solid black;
     height: 150px;
     width: 100%;
     display: flex;
@@ -45,8 +47,8 @@ body{
     width: 100%;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(4, 97.7px);
-    grid-gap: 3px;
+    grid-template-columns: repeat(4, 98px);
+    grid-gap: 2px;
 }
 
 input{
@@ -62,10 +64,15 @@ input:focus{
 
 input:hover{
     filter: brightness(130%);
+    
 }
 
 .operator{
     background-color: #181818;
+}
+
+.operator:hover{
+    cursor: pointer;
 }
 
 .operator-out{
@@ -75,10 +82,22 @@ input:hover{
     margin-bottom: 3px;
 }
 
+.operator-out:hover{
+    cursor: pointer;
+}
+
 .number{
     background-color: #111111;;
 }
 
+.number:hover{
+    cursor: pointer;
+}
+
 .result{
-    background-color: rgba(167, 110, 4, 0.541);
+    background-color: rgba(176, 57, 18, 0.908);
+}
+
+.result:hover{
+    cursor: grab;
 }

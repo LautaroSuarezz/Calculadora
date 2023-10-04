@@ -4,38 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <title>Calculadora</title>
 </head>
 <body>
-    <div class="calculator">
+    <div class="calculator wow animate__animated animate__fadeIn">
         <div class="result-bar">
             <span id="Result"></span>
         </div>
-        <input class="operator-out" type="button" value="C" id="Delete">
+        <input class="operator-out wow animate__animated animate__fadeIn" type="button" value="C" id="Delete">
         <div class="controlls">
              
-            <input class="number" type="button" value="7" id="seven">
-            <input class="number" type="button" value="8" id="eight">
-            <input class="number" type="button" value="9" id="nine">
-            <input class="operator" type="button" value="|" id="divide">
-            <input class="number" type="button" value="4"id="four"> 
-            <input class="number" type="button" value="5"id="five">
-            <input class="number" type="button" value="6"id="six">
-            <input class="operator" type="button" value="*" id="multiply">
-            <input class="number" type="button" value="1"id="one">
-            <input class="number" type="button" value="2"id="two">
-            <input class="number" type="button" value="3"id="three">
-            <input class="operator" type="button" value="-" id="minus">
-            <input class="result" type="button" value="=" id="equal">
-            <input class="number" type="button" value="0" id="cero">
-            <input class="number" type="button" value="." id="coma">
-            <input class="operator" type="button" value="+" id="plus">
+            <input class="number wow animate__animated animate__fadeIn" type="button" value="7" id="seven">
+            <input class="number wow animate__animated animate__fadeIn" type="button" value="8" id="eight">
+            <input class="number wow animate__animated animate__fadeIn" type="button" value="9" id="nine">
+            <input class="operator wow animate__animated animate__fadeIn" type="button" value="|" id="divide">
+            <input class="number wow animate__animated animate__fadeIn" type="button" value="4"id="four"> 
+            <input class="number wow animate__animated animate__fadeIn" type="button" value="5"id="five">
+            <input class="number wow animate__animated animate__fadeIn" type="button" value="6"id="six">
+            <input class="operator wow animate__animated animate__fadeIn" type="button" value="*" id="multiply">
+            <input class="number wow animate__animated animate__fadeIn" type="button" value="1"id="one">
+            <input class="number wow animate__animated animate__fadeIn" type="button" value="2"id="two">
+            <input class="number wow animate__animated animate__fadeIn" type="button" value="3"id="three">
+            <input class="operator wow animate__animated animate__fadeIn" type="button" value="-" id="minus">
+            <input class="result wow animate__animated animate__fadeIn" type="button" value="=" id="equal">
+            <input class="number wow animate__animated animate__fadeIn" type="button" value="0" id="cero">
+            <input class="number wow animate__animated animate__fadeIn" type="button" value="." id="coma">
+            <input class="operator wow animate__animated animate__fadeIn" type="button" value="+" id="plus">
 
         </div>
     </div>
 
-    <script src="main.js"></script>
-    
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script> new WOW().init(); </script>
 </body>
 </html>
