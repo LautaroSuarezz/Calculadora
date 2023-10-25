@@ -1,5 +1,5 @@
 function takeValue(x) {
-    console.log("Hhoifsd")
+    console.log("Numero")
     console.log(x)
 	document.getElementById('Result').innerHTML += x;
 }
@@ -31,11 +31,14 @@ var divide = document.getElementById('divide');
 var multiply = document.getElementById('multiply');
 var equal = document.getElementById('equal');
 var deleteN = document.getElementById('Delete');
+var coma = document.getElementById('coma')
 
 
 
 
-
+cero.addEventListener("click", function(){
+    takeValue(0);
+})
 one.addEventListener("click", function(){
     takeValue(1);
 })
@@ -75,12 +78,14 @@ multiply.addEventListener("click", function(){
 divide.addEventListener("click", function(){
     takeValue("/");
 })
-
+coma.addEventListener("click", function(){
+    takeValue(",");
+})
 
 equal.addEventListener("click", function(){
     calculateResult();
 })
 
 deleteN.addEventListener("click", function(){
-    clearInput()
+    clearInput();
 })

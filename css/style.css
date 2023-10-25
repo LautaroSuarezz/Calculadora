@@ -13,6 +13,21 @@ body{
     background-color: #747570;
 }
 
+.mainText{
+    display: flex;
+    margin-right: 300px;
+    font-family:'Tilt Neon', sans-serif;   
+    font-size: 50px;
+    border: solid 6px black;
+    padding: 20px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+:hover .mainText{
+    cursor: grabbing;
+}
+
 .calculator{
     height: 600px;
     width: 400px;
